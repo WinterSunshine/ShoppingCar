@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/Container"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_12_size"/>
+
+    <LinearLayout
+        style="@style/Container"
+        android:layout_marginLeft="@dimen/distance_12_size"
+        android:layout_marginRight="@dimen/distance_12_size"
+        android:background="@mipmap/item_coupon_background_orange"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView"
+                android:text="满减"
+                android:textColor="@color/font_red"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/distance_12_size"
+                android:paddingLeft="@dimen/distance_8_size"
+                android:paddingRight="@dimen/distance_4_size"
+                android:paddingTop="@dimen/distance_12_size">
+
+                <TextView
+                    android:id="@+id/tv_my_full_cut_title"
+                    style="@style/TextView.Black"
+                    android:text="满1000减200"
+                    android:textSize="@dimen/text_18_size"/>
+
+                <TextView
+                    android:id="@+id/tv_my_full_cut_valid_time_content"
+                    style="@style/TextView.Gray"
+                    android:layout_marginTop="@dimen/distance_8_size"
+                    android:text="截止日期：2016.10.30"
+                    android:textSize="@dimen/text_14_size"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

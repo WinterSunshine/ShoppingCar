@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout style="@style/ToolBar">
+
+        <TextView
+            style="@style/ToolBar.CenterTitle"
+            android:text="购物车"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/Container"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/Container"
+            android:orientation="vertical">
+
+            <View style="@style/HorizontalLineDivider"/>
+
+            <com.wg.shopping.view.custom.ShoppingList
+                android:id="@+id/xlv_shopping_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                style="@style/Container"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View style="@style/HorizontalLineDivider"/>
+
+                <TextView
+                    style="@style/TextView.IconLine"
+                    android:layout_height="40dip"
+                    android:drawableLeft="@null"
+                    android:drawableRight="@null"
+                    android:text="折扣"/>
+
+                <View style="@style/HorizontalLineDivider"/>
+
+                <FrameLayout
+                    style="@style/Container.Panel_8"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:gravity="center"
+                        android:text="电子类"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        style="@style/TextView.Black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dip"
+                        android:gravity="center"
+                        android:text="7折"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        style="@style/TextView.Black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center"
+                        android:text="截止时间：2016.10.31"
+                        android:textSize="14sp"/>
+                </FrameLayout>
+
+                <View style="@style/HorizontalLineDivider"/>
+
+                <TextView
+                    style="@style/TextView.IconLine"
+                    android:layout_height="40dip"
+                    android:drawableLeft="@null"
+                    android:drawableRight="@null"
+                    android:text="优惠券"/>
+
+                <View style="@style/HorizontalLineDivider"/>
+
+                <FrameLayout
+                    style="@style/Container.Panel_8"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:gravity="center"
+                        android:text="满1000减200"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        style="@style/TextView.Black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center"
+                        android:text="截止时间：2016.10.31"
+                        android:textSize="14sp"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View style="@style/HorizontalLineDivider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_shoping_cart_sum_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/distance_8_size"
+                android:gravity="left"
+                android:paddingLeft="16dip"
+                android:text="0.00"
+                android:textColor="@color/font_red"
+                android:textSize="20dip"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_shoping_cart_submit"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="0dp"
+            android:background="@color/colorToolBar"
+            android:gravity="center"
+            android:text="去结算"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

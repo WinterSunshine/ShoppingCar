@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout style="@style/ToolBar">
+
+        <ImageView style="@style/ToolBar.LeftImage"/>
+
+        <TextView
+            style="@style/ToolBar.CenterTitle"
+            android:text="添加优惠信息"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/Container"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            style="@style/HorizontalLineDivider"
+            android:layout_marginLeft="10dip"/>
+
+        <TextView
+            android:id="@+id/add_discount"
+            style="@style/TextView.IconLine"
+            android:drawableLeft="@mipmap/icon_find_pay"
+            android:text="添加折扣优惠"/>
+
+        <View
+            style="@style/HorizontalLineDivider"
+            android:layout_marginLeft="10dip"/>
+
+        <TextView
+            android:id="@+id/add_full_cut"
+            style="@style/TextView.IconLine"
+            android:drawableLeft="@mipmap/icon_update_pay"
+            android:text="添加满减优惠"/>
+    </LinearLayout>
+
+    <View style="@style/HorizontalLineDivider"/>
+</LinearLayout>

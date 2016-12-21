@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/Container.Panel_4"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/siv_item_common_logo"
+        style="@style/Logo"/>
+
+    <LinearLayout
+        style="@style/Container.Panel_4"
+        android:layout_width="0dip"
+        android:layout_height="48dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_common_title"
+            style="@style/TextView.Green"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="标题"/>
+
+        <TextView
+            android:id="@+id/tv_item_common_price"
+            style="@style/TextView.Orange"
+            android:layout_height="0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/distance_4_size"
+            android:layout_weight="1"
+            android:text="价格"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_item_common_add"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="16dip"
+        android:src="@mipmap/icon_add"/>
+</LinearLayout>
